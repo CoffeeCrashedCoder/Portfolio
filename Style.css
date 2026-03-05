@@ -7,7 +7,7 @@ body
 {
     position: fixed;
     z-index: 11;
-    width: 100vw;
+    width: 100%;
     height: auto;
     background-color: #1E293B;
     color: #E5E7EB;
@@ -21,13 +21,6 @@ body
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
-.Background
-{
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    color: #E5E7EB;
-}
 .OverheadLinks
 {
     margin:9%;
@@ -38,12 +31,13 @@ body
 {
     position: relative;
     width: 100%;
+    height: auto;
     text-align: center;
 }
 .VideoContainer video
 {
     position: fixed;
-    width: auto;
+    width: 100%;
     display: block;
 }
 .Grid-Container
@@ -52,50 +46,103 @@ body
     padding-top: 10%;
     grid-template-columns: repeat(2, 1fr);
     text-align: center;
-    width: 100vw;
+    width: 100%;
 
     position: absolute;
     z-index: 10;
 }
+
 .Grid-Item
 {
+    display: grid;
     text-align: center;
-    height: auto;
+    grid-template-columns: repeat(2, 1fr);
     margin-top: 10%;
     border-radius: 10px;
     border: 1px solid orange;
     margin-left: 20%;
-    margin-right: 20%; 
-    margin-bottom: 20%;
+    margin-right: 20%;
     background-color:#1E293B;
     color: rgb(122, 45, 71);
 }
-.Grid-Item img
+.Grid-Item div
 {
-    width: inherit;
-    display: block;
-    border-radius: 10px;
-    border: 1px solid orange;
+    margin: 10%;
 }
 .Paragraph
 {
     text-align: left;
 }
-.Grid-Item-Child-One
+.Grid-Container a
 {
-    
-    text-align: center;
-    width: inherit;
-
-    position: absolute;
-}
-.Grid-Item a
-{
-    width: inherit;
-    height: 100%;
+    width: 100%;
+    height: auto;
     text-decoration: none;
+}
+.Text-grid
+{
+    grid-template-Rows: repeat(2, 1fr);
     color: #E5E7EB;
-    display: grid;
-    text-align: center;
+}
+.Text-grid p,h2
+{
+    text-decoration: none;
+}
+.Image-Div
+{
+    white-space: nowrap;
+}
+.Image-Div img
+{
+    vertical-align: middle;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: 1px solid orange;
+}
+.Adjust-Image {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
 
+
+@media (max-width: 768px)
+{
+    .Grid-Container{
+        padding-top: 50%;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .Grid-Item
+    {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .VideoContainer video
+    {
+        position: fixed;
+        height: 100%;
+        width: auto;
+        display: block;
+    }
+}
+@media (min-width: 768px) and (max-width: 1660px)
+{
+    .VideoContainer video
+    {
+        position: fixed;
+        height: 100%;
+        width: auto;
+        display: block;
+    }
+}
+@media (min-width: 1200px)
+{
+    .VideoContainer video
+    {
+        position: fixed;
+        height: auto;
+        width: 100%;
+        display: block;
+    }
 }
