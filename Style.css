@@ -10,6 +10,7 @@ body
     background-color: rgb(122, 45, 71);
     color: white;
     border: 2px solid snow;
+    border-radius: 10px;
     text-align: center;
     box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
 }
@@ -19,11 +20,28 @@ body
     height: 100%;
     background-color: grey;
     text-align: left;
-    color: lightblue;
+    color: white;
 }
 .OverheadLinks
 {
     margin:9%;
     text-align: center;
+    color: white;
 
+}
+.ProjectLeft
+{
+    width: 49%;
+    height: 0%;
+    text-align: center;
+    display: inline-block;
+}
+.ProjectRight
+{
+    width: 50%;
+    height: 0%;
+    margin-top: 0%;
+    margin-left: 50%;
+    margin-bottom: 15%;
+    text-align: center;
 }
