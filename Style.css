@@ -1,0 +1,29 @@
+body
+{
+    margin: 0px;
+    padding: 0%;
+}
+.Overhead
+{
+    width:auto;
+    height: auto;
+    background-color: rgb(122, 45, 71);
+    color: white;
+    border: 2px solid snow;
+    text-align: center;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
+}
+.Background
+{
+    width: auto;
+    height: 100%;
+    background-color: grey;
+    text-align: left;
+    color: lightblue;
+}
+.OverheadLinks
+{
+    margin:200px;
+    text-align: center;
+    
+}
