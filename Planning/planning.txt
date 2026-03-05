@@ -1,0 +1,40 @@
+What My Page Should Include
+
+
+Goals:
+*Showcases of all my projects
+*Descriptions to all projects (this is why Factory "Game" and "Specialization" is split.)
+*About me page detailed about my life and what I'm inspiring to work with.
+*CV?
+
+
+Projects to include:
+*Game project 3: Final Blaze.
+*Specialization: Factory.
+*Game: Factory.
+*Introduction to game engine: "Turn Based Combat Package".
+*Game: Technomania.
+*Sleeping with the fishes?
+
+BUGGS TO FIX:
+*"OverheadLinks" margin, should be screen size dependant? Is there a way to make it adjust to percental paging. 
+*Make projects use "Grid" enabling mobile support.
+*
+*
+
+
+Push Goals:
+*Cursor animation on clicking on a link.
+*Calming music in the background.
+*Stylized sliding text overlay.
+*Add my little "engine/standalone" as a project to include.
+*Other creative projects (music/Cosplay etc.) <-- Make this its own page with a little "check out this!" thing on this portfolio.
+*Same with Path of Exile builds. ^^
+
+
+Stylized sliding text overlay:
+*Only bot and top, an italic text looking like this -> ~/~/text here/~/~.
+*Semi-transparent.
+*Color fitting page.
+*Find a good font.
+*See png for example.
