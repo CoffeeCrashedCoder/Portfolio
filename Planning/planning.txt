@@ -18,7 +18,7 @@ Projects to include:
 
 BUGGS TO FIX:
 *"OverheadLinks" margin, should be screen size dependant? Is there a way to make it adjust to percental paging. 
-*
+*Make projects use "Grid" enabling mobile support.
 *
 *
 
