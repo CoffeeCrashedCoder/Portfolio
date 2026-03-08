@@ -5,15 +5,15 @@ body
 }
 html
 {
-    background-color: grey;
+    background-color: #0F172A;
 }
 .Overhead
 {
     width:auto;
     height: auto;
-    background-color: rgb(122, 45, 71);
-    color: white;
-    border: 2px solid snow;
+    background-color: #1E293B;
+    color: #E5E7EB;
+    border: 2px solid #14B8A6;
     border-radius: 10px;
     text-align: center;
     box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
@@ -22,15 +22,15 @@ html
 {
     width: auto;
     height: auto;
-    background-color: grey;
+    background-color: #0F172A;
     text-align: left;
-    color: white;
+    color: #E5E7EB;
 }
 .OverheadLinks
 {
     margin:9%;
     text-align: center;
-    color: white;
+    color: #E5E7EB;
 }
 .Grid-Container
 {
@@ -45,10 +45,10 @@ html
     grid-template-columns: repeat(2, 1fr);
     margin-top: 10%;
     border-radius: 10px;
-    border: 2px solid rgb(122, 45, 71);
+    border: 2px solid #14B8A6;
     margin-left: 20%;
     margin-right: 20%;
-    background-color: paleturquoise;
+    background-color:#1E293B;
     color: rgb(122, 45, 71);
 }
 .Grid-Item div
@@ -59,7 +59,7 @@ html
 {
     margin-top: 10%;
     border-radius: 10px;
-    border: 2px solid rgb(122, 45, 71);
+    border: 2px solid #14B8A6;
 }
 .Paragraph
 {
@@ -73,4 +73,5 @@ html
 .Grid-Item a
 {
     text-decoration: none;
+    color: #E5E7EB;
 }
