@@ -70,23 +70,10 @@ body
     background-color:#1E293B;
     color: rgb(122, 45, 71);
 }
-.Grid-Item div
-{
-    margin: 10%;
-}
 .Grid-Item img
 {
-    width: 100%;
-    height: auto;
-    margin-top: 10%;
-    border-radius: 10px;
-    border: 1px solid orange;
-}
-.Grid-Item video
-{
-    width: 100%;
-    height: auto;
-    margin-top: 10%;
+    width: inherit;
+    display: block;
     border-radius: 10px;
     border: 1px solid orange;
 }
@@ -96,8 +83,11 @@ body
 }
 .Grid-Item-Child-One
 {
-    grid-template-rows: repeat(2, 1fr);
+    
     text-align: center;
+    width: inherit;
+
+    position: absolute;
 }
 .Grid-Item a
 {
@@ -106,5 +96,6 @@ body
     text-decoration: none;
     color: #E5E7EB;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+
 }
