@@ -21,13 +21,6 @@ body
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
-.Background
-{
-    width: 100%;
-    height: 100%;    
-    text-align: center;
-    color: #E5E7EB;
-}
 .OverheadLinks
 {
     margin:9%;
@@ -38,13 +31,13 @@ body
 {
     position: relative;
     width: 100%;
-    height: 100%;
+    height: auto;
     text-align: center;
 }
 .VideoContainer video
 {
     position: fixed;
-    width: auto;
+    width: 100%;
     display: block;
 }
 .Grid-Container
@@ -53,11 +46,12 @@ body
     padding-top: 10%;
     grid-template-columns: repeat(2, 1fr);
     text-align: center;
-    width: 100vw;
+    width: 100%;
 
     position: absolute;
     z-index: 10;
 }
+
 .Grid-Item
 {
     display: grid;
@@ -75,27 +69,60 @@ body
 {
     margin: 10%;
 }
-.Grid-Item img
-{
-    width: 100%;
-    height: auto;
-    margin-top: 10%;
-    border-radius: 10px;
-    border: 1px solid orange;
-}
 .Paragraph
 {
     text-align: left;
 }
-.Grid-Item-Child-One
-{
-    grid-template-rows: repeat(2, 1fr);
-    text-align: center;
-}
-.Grid-Item a
+.Grid-Container a
 {
     width: 100%;
     height: auto;
     text-decoration: none;
+}
+.Text-grid
+{
+    grid-template-Rows: repeat(2, 1fr);
     color: #E5E7EB;
+}
+.Text-grid p,h2
+{
+    text-decoration: none;
+}
+.Image-Div
+{
+    white-space: nowrap;
+}
+.Image-Div img
+{
+    vertical-align: middle;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: 1px solid orange;
+}
+.Adjust-Image {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+
+@media (max-width: 768px)
+{
+    .Grid-Container{
+        padding-top: 50%;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .Grid-Item
+    {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .VideoContainer video
+    {
+        position: fixed;
+        height: 100%;
+        width: auto;
+        display: block;
+    }
 }
