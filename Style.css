@@ -126,3 +126,23 @@ body
         display: block;
     }
 }
+@media (min-width: 768px) and (max-width: 1660px)
+{
+    .VideoContainer video
+    {
+        position: fixed;
+        height: 100%;
+        width: auto;
+        display: block;
+    }
+}
+@media (min-width: 1200px)
+{
+    .VideoContainer video
+    {
+        position: fixed;
+        height: auto;
+        width: 100%;
+        display: block;
+    }
+}
