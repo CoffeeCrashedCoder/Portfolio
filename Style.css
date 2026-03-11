@@ -7,7 +7,7 @@ body
 {
     position: fixed;
     z-index: 11;
-    width: 100%;
+    width: 99.8%;
     height: auto;
     background-color: #1E293B;
     color: #E5E7EB;
@@ -38,6 +38,8 @@ body
 {
     position: fixed;
     width: 100%;
+    height: 100%;
+    object-fit: cover;
     display: block;
 }
 .Grid-Container
@@ -112,37 +114,11 @@ body
     .Grid-Container{
         padding-top: 50%;
         grid-template-columns: repeat(1, 1fr);
+        scale: 40%;
     }
     .Grid-Item
     {
         margin-left: 10%;
         margin-right: 10%;
-    }
-    .VideoContainer video
-    {
-        position: fixed;
-        height: 100%;
-        width: auto;
-        display: block;
-    }
-}
-@media (min-width: 768px) and (max-width: 1660px)
-{
-    .VideoContainer video
-    {
-        position: fixed;
-        height: 100%;
-        width: auto;
-        display: block;
-    }
-}
-@media (min-width: 1200px)
-{
-    .VideoContainer video
-    {
-        position: fixed;
-        height: auto;
-        width: 100%;
-        display: block;
     }
 }
