@@ -3,6 +3,11 @@ body
     margin: 0px;
     padding: 0%;
 }
+.Everything {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .Overhead
 {
     position: fixed;
@@ -112,13 +117,24 @@ body
 @media (max-width: 768px)
 {
     .Grid-Container{
-        padding-top: 50%;
+        
         grid-template-columns: repeat(1, 1fr);
-        scale: 40%;
+        scale: 90%;
+        margin-top: 10%;
     }
     .Grid-Item
     {
         margin-left: 10%;
         margin-right: 10%;
+    }
+    .Overhead
+    {
+        width: 99.7%;
+        align-self: center;
+        height: auto;
+    }
+    .Overhead
+    {
+        font-size:x-small;
     }
 }
