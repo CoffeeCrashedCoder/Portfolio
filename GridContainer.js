@@ -5,8 +5,8 @@ const contactContainer = document.getElementById("js-contacts-grid-container");
 if(projectContainer)
     projectContainer.innerHTML = `
 <div class="Grid-Container">
-    ${createProjectGridItem("TechnoMania","This was the second game project I was participating in.","Technomania.jpg","Technomania.html")}
     ${createProjectGridItem("Final Blaze","This was the third game project I was participating in.","FinalBlaze.png","FinalBlaze.html")}
+    ${createProjectGridItem("TechnoMania","This was the second game project I was participating in.","Technomania.jpg","Technomania.html")}
 </div>
 `;
 
