@@ -3,11 +3,6 @@ body
     margin: 0px;
     padding: 0%;
 }
-.Everything {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 .Overhead
 {
     position: fixed;
@@ -129,12 +124,9 @@ body
     }
     .Overhead
     {
-        width: 99.7%;
+        width: 99.7%;   
         align-self: center;
         height: auto;
-    }
-    .Overhead
-    {
         font-size:x-small;
     }
 }
