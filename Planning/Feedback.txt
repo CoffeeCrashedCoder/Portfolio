@@ -1,0 +1,26 @@
+Contacts
+*One box
+*Email, Phone, GitHub, LinkedIn
+Have them being clickable:
+*Mail->opens a new mail to send
+*LinkedIn link
+*GitHub link
+
+Add CV in the top as a forth category
+
+Projects:
+*Summery: Platform, engine, group size, link to game page (itch), link to GitHub scripts (copy into new github),
+School/gamejam/personal project/home project
+*Trailer
+*My contribution (what I did)
+*Split features into segments/sections
+*In depth full breakdown:
+**How it was working with elements in specific engine
+**Gifs
+**
+*
+*
+
+Things to think about in general when writing:
+*Highlight important information / Keywords
+*
