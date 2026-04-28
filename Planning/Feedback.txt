@@ -24,3 +24,7 @@ School/gamejam/personal project/home project
 Things to think about in general when writing:
 *Highlight important information / Keywords
 *
+
+Other stuff one can include:
+*Tags - check Williams page
+*Consider linking other peoples pages
