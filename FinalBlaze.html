@@ -25,8 +25,9 @@
                                 <h1 class="Title">Final Blaze</h1>
                             </div>
                             <div class="Project-Description">
-                                <p2>Playing as a burning flame we call "Flint", you travel through a factory that's on the brink of breaking down. You are the source the factory depends apon, the energy it runs from. But you were place there against your will and it's time to escape!</p2><br>
-                                <p2>In Final Blaze you navigate levels jumping over pitfalls, traversing platforms and avoiding certain death from the robots working there as well as the factory itself. </p2>
+                                <p2>Playing as a burning flame we call "Flint", you travel through a factory that's on the brink of breaking down. You are the source the factory depends apon, the energy it runs from. But you were place there against your will and it's time to escape!</p2>
+                                <p2>In Final Blaze you navigate levels jumping over pitfalls, traversing platforms and avoiding certain death from the robots working there as well as the factory itself. </p2><br>
+                                <p2>I worked on the enemy AI of this project, handling NPC movement and interaction using a custom state machine in combination with Unity's navigation system.</p2>
                             </div>
                         </div>
                     </a>
@@ -37,7 +38,23 @@
                             <h2>The Enemy AI</h2>
                         </div>
                         <div class="Project-Description">
-                            <p2>I worked on the enemy AI of this project, handling movement and interaction using a custom state machine.</p2><br>
+                            <p2>There is 4 components that make up the Enemy System: <br>* EnemyBase (Enemy/Agent library) <br>* EnemyProperties (Stats) <br>* EnemyStateMachine (Transitioning) <br>* EnemyStates (Logic/Execution) <br>  </p2>
+                            <p2>The enemy is built of an "EnemyBase" script supported by an interface holding its properties. "EnemyBase" owns all the functionality effecting itself and its navigation agent while the state machine handles transitioning logic and executes the active state(s).</p2><br>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="Miner.png">
+                    </div>
+                </div>
+                <div class="Project-Item-With_Image">
+                    <div class="Project-Text-grid">
+                        <div>
+                            <h2>State Machine</h2>
+                        </div>
+                        <div class="Project-Description">
+                            <p2>I built my own statemachine where I decided to make it a bit different from how most normally are done. My machine consists of an active state container, supporting handling multiple states at the same time. This way our enemy can, as an example, be stunned (or overheated as we call it) while getting knocked back at the same time! </p2><br>
+                            <p2>Initially the states called to the machine to transition, but I later chose to rework this making the machine switch on states and their different "stages" (enter, update, exit) depending on a toggled flag </p2>
+                            <p2></p2><br>
                         </div>
                     </div>
                     <div>
@@ -56,6 +73,15 @@
                             <p2>description</p2>
                         </div>
                     </div>
+                </div>
+                <div class="Project-Item-In-Depth">
+                    <a>
+                        <div class="Text-grid">
+                            <div class="Paragraph">
+                                <a href="statemachineBreakdown.html"><h3 class="Title">For in depth breakdown click here! </h3></a>
+                            </div>
+                        </div>
+                    </a>
                 </div>
             </div>
             
