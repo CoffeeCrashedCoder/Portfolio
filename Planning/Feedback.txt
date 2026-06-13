@@ -1,16 +1,16 @@
 Contacts
-*One box
-*Email, Phone, GitHub, LinkedIn
-Have them being clickable:
-*Mail->opens a new mail to send
-*LinkedIn link
-*GitHub link
+*One box - Check
+*Email, Phone, GitHub, LinkedIn - Check
+Have them being clickable: - Check
+*Mail->opens a new mail to send - Check
+*LinkedIn link - Check
+*GitHub link - Check
 
 Add CV in the top as a forth category
 
 Projects:
-*Summery: Platform, engine, group size, link to game page (itch), link to GitHub scripts (copy into new github),
-School/gamejam/personal project/home project
+*Summery: Platform, engine, group size, link to game page (itch), link to GitHub scripts (copy into new github)
+School, gamejam, personal project, home project
 *Trailer
 *My contribution (what I did)
 *Split features into segments/sections
