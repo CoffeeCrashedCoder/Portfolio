@@ -67,11 +67,39 @@ body
     background-color:#1E293B;
     color: rgb(122, 45, 71);
 }
+
+.Contacts-Grid-Item
+{
+    display: grid;
+    text-align: center;
+    
+    border-radius: 10px;
+    border: 1px solid orange;
+    margin-left: 35%;
+    margin-right: 35%;
+    margin-top: 10%;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    background-color:#1E293B;
+    color: rgb(122, 45, 71);
+}
+
 .Grid-Item div
 {
     margin: 10%;
 }
+.Contacts-Grid-Item div
+{
+    margin-left: 3%;
+    text-align: left;
+    margin-bottom: 1%;
+    margin-top: 1%;
+}
 .Paragraph
+{
+    text-align: left;
+}
+.Contacts-Paragraph
 {
     text-align: left;
 }
@@ -85,6 +113,13 @@ body
 {
     grid-template-Rows: repeat(2, 1fr);
     color: #E5E7EB;
+}
+.Contacts-Text-grid
+{
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    color: #E5E7EB;
+    align-items: center;
 }
 .Image-Div
 {
@@ -178,6 +213,26 @@ br
         margin-left: 10%;
         margin-right: 10%;
     }
+    .Contacts-Grid-Item
+    {
+        margin-left: 15%;
+        margin-right: 15%;
+        margin-top: 25%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .Contacts-Text-grid
+    {
+        grid-template-Columns: repeat(2, 4fr);
+        color: #E5E7EB;
+        margin-bottom: 5%;
+        align-items: center;
+    }
+    .Contacts-Text-grid h4, h3, h2
+    {
+        font-size: 0.8rem;
+    }
+
     .Overhead
     {
         width: 99.7%;   
