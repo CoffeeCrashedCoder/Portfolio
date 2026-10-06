@@ -38,3 +38,9 @@ Stylized sliding text overlay:
 *Color fitting page.
 *Find a good font.
 *See png for example.
+
+
+FINAL BLAZE:
+*CLICKED LINK SHOULD BE ORANGE - NOT PURPLE (for detailed breakdown)
+*FIXED DETAILED BREAKDOWN
+*ADD SOMETHING MORE TO "STATE MACHINE" SECTION
