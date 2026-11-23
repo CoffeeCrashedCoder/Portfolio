@@ -38,8 +38,12 @@
                             <h2>The Enemy AI</h2>
                         </div>
                         <div class="Project-Description">
-                            <p2>There is 4 components that make up the Enemy System I made: <br>* EnemyBase (Enemy/Agent library) <br>* IEnemyProperties (Stats interface) <br>* EnemyStateMachine (Transitioning) <br>* EnemyStates (Logic/Execution) <br>  </p2>
-                            <p2>The enemy is built of an "EnemyBase" script supported by an interface holding its properties. "EnemyBase" owns all the functionality effecting itself and its navigation agent while the state machine handles transitioning logic and executes the active state(s).</p2><br>
+                            <p2>There is 4 components that make up the Enemy System I made: <br>*
+                                EnemyBase (Enemy/Agent library) <br>*
+                                IEnemyProperties (Stats interface) <br>*
+                                EnemyStateMachine (Transitioning) <br>*
+                                EnemyStates (Logic/Execution) <br>  </p2>
+                            <p2>The enemy is built of an "EnemyBase" script supported by an interface holding its properties. "EnemyBase" owns all the functionality effecting itself and its navigation agent while we have a hierarchical state machine that handles transitioning logic and executes the active state(s).</p2><br>
                         </div>
                     </div>
                     <div>
@@ -49,10 +53,10 @@
                 <div class="Project-Item-With_Image">
                     <div class="Project-Text-grid">
                         <div>
-                            <h2>State Machine</h2>
+                            <h2>Paralell State Machine</h2>
                         </div>
                         <div class="Project-Description">
-                            <p2>I built my own statemachine where I decided to make it a bit different from how most normally are done. My machine consists of an active state container, supporting handling multiple states at the same time. This way our enemy can, as an example, be stunned (or overheated as we call it) while getting knocked back at the same time. </p2><br>
+                            <p2>I built my own statemachine where I decided to make it a bit different from how most normally are done. My machine consists of an active state container, supporting handling multiple states at the same time (a paralell machine). This way our enemy can, as an example, be stunned (or overheated as we call it) while getting knocked back at the same time. The states are therefor fully independent from one another and are limited entierly by the enemy's condition instead. </p2><br>
                             <p2></p2><br>
                         </div>
                     </div>
@@ -71,8 +75,8 @@
                             <h2>Difficulties</h2>
                         </div>
                         <div class="Paragraph">
-                            <p2>Half way through the project I stumbled upon a "better" type of statemachine to use for this project instead of the really basic one I initially set up for the game. </p2><br>
-                            <p2>Using a *inserttypenameonceyoufinditagain* we could more easily fit in more enemies and with smoother transitioning between each state. The transitioning to this new machine however was exteremely clumpsy and did not find enough time to complete as we got closer to the end of the project.</p2><br>
+                            <p2> Halfway through the project I noticed the machine was causing issues. Having multiple states active at the same time while also figguring out a design for it caused many time consuming bugs. The machine was messy, states did not behave as anticipated so I decided to refactor it completely. </p2> <br>
+                            <p2> Please read more about that in the breakdown below. </p2>
                         </div>
                     </div>
                 </div>
