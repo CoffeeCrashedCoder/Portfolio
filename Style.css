@@ -42,16 +42,127 @@ body
     object-fit: cover;
     display: block;
 }
+
+/*
+* CLEAR OUT GARBAGE
+* Define what a project cell is and make sure you can insert or have a template or map the different projects in the grid.
+* Aka: Same css on all projects and seperate grid location fully to a template or map.
+* Find or make same size pictures -> low prio
+* Fix all other pages too.
+*/
 .Grid-Container
 {
     display: grid;
-    padding-top: 10%;
+    padding-top: 12%;
     grid-template-columns: repeat(10, 1fr);
-    text-align: center;
+    grid-template-rows: repeat(4, 1fr);
+    justify-content: center;
     width: 100%;
 
     position: absolute;
     z-index: 10;
+}
+/* 4 projects */
+.Grid-Item-Project-1
+{
+    display: subgrid;
+    text-align: center;
+    grid-template-columns: repeat(2, 1fr);
+
+    border-radius: 10px;
+    border: 1px solid orange;
+
+    background-color:#1E293B;
+    color: rgb(122, 45, 71);
+
+    grid-row: 1 / span 1;
+    grid-column: 2 / span 3;
+}
+
+.Grid-Item-Project-2
+{
+    display: subgrid;
+    text-align: center;
+    grid-template-columns: repeat(2, 1fr);
+
+    border-radius: 10px;
+    border: 1px solid orange;
+
+    background-color:#1E293B;
+    color: rgb(122, 45, 71);
+
+    grid-row: 1 / span 1;
+    grid-column: 7 / span 3;
+}
+
+.Grid-Item-Project-3
+{
+    display: subgrid;
+    text-align: center;
+    grid-template-columns: repeat(2, 1fr);
+
+    border-radius: 10px;
+    border: 1px solid orange;
+
+    background-color:#1E293B;
+    color: rgb(122, 45, 71);
+
+    grid-row: 3 / span 1;
+    grid-column: 2 / span 3;
+}
+
+.Grid-Item-Project-4
+{
+    display: subgrid;
+    text-align: center;
+    grid-template-columns: repeat(2, 1fr);
+
+    border-radius: 10px;
+    border: 1px solid orange;
+
+    background-color:#1E293B;
+    color: rgb(122, 45, 71);
+
+    grid-row: 3 / span 1;
+    grid-column: 7 / span 3;
+}
+
+.Project-Div-Link
+{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+}
+
+.Text-Grid
+{
+    color: #E5E7EB;
+
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+    margin: 10%;
+}
+.Project-Image-Div
+{
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 1;
+    margin: 10%;
+}
+.Project-Image-Div img
+{
+    vertical-align: middle;
+    width: 100%;
+    height: 150px;
+    border-radius: 10px;
+    border: 1px solid orange;
+}
+.Image-Div img
+{
+    vertical-align: middle;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: 1px solid orange;
 }
 
 .Centered-Grid-Container
@@ -64,21 +175,6 @@ body
     position: absolute;
     z-index: 10;
 }
-
-.Grid-Item
-{
-    display: grid;
-    text-align: center;
-    grid-template-columns: repeat(2, 1fr);
-    margin-top: 10%;
-    border-radius: 10px;
-    border: 1px solid orange;
-    margin-left: 20%;
-    margin-right: 20%;
-    background-color:#1E293B;
-    color: rgb(122, 45, 71);
-}
-
 .Contacts-Grid-Item
 {
     display: grid;
@@ -93,11 +189,6 @@ body
     padding-right: 2.5%;
     background-color:#1E293B;
     color: rgb(122, 45, 71);
-}
-
-.Grid-Item div
-{
-    margin: 10%;
 }
 .Contacts-Grid-Item div
 {
@@ -120,29 +211,13 @@ body
     height: auto;
     text-decoration: none;
 }
-.Text-grid
-{
-    grid-template-Rows: repeat(2, 1fr);
-    color: #E5E7EB;
-}
+
 .Contacts-Text-grid
 {
     display: grid;
     grid-template-columns: repeat(2, 2fr);
     color: #E5E7EB;
     align-items: center;
-}
-.Image-Div
-{
-    white-space: nowrap;
-}
-.Image-Div img
-{
-    vertical-align: middle;
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    border: 1px solid orange;
 }
 .Adjust-Image {
     display: inline-block;
@@ -225,6 +300,14 @@ br
 
 @media (max-width: 768px)
 {
+    /*FIX SPACE BETWEEN TO BE WAY SMALLER
+    * Probably 2rows project 1 row empty 2 rows project 1 row empty etc...
+    * Maybe other design for image as well (fill image over full project div and tint it or set Text above image??)
+    * Shrink with more space in between or have only 1 column for projects.
+    *
+    *Remove garbage and apply settings to other pages too.
+    *
+    */
     .Grid-Container{
         
         grid-template-columns: repeat(1, 1fr);

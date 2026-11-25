@@ -7,36 +7,24 @@ const contactContainer = document.getElementById("js-contacts-grid-container");
 if(projectContainer)
     projectContainer.innerHTML = `
 <div class="Grid-Container">
-    <div></div>
-    ${createProjectGridItem("Final Blaze","This was the third game project I was participating in.","FinalBlaze.png","FinalBlaze.html")}
-    ${createProjectGridItem("Final Blaze","This was the third game project I was participating in.","FinalBlaze.png","FinalBlaze.html")}
-    ${createProjectGridItem("Final Blaze","This was the third game project I was participating in.","FinalBlaze.png","FinalBlaze.html")}
-    <div></div>
-    <div></div>
-    ${createProjectGridItem("Crimson","This was the forth game project I was participating in.","Crimson.png","Crimson.html")}
-    ${createProjectGridItem("Crimson","This was the forth game project I was participating in.","Crimson.png","Crimson.html")}
-    ${createProjectGridItem("Crimson","This was the forth game project I was participating in.","Crimson.png","Crimson.html")}
-    <div></div>
+    ${createProjectGridItem("Final Blaze","This was the third game project I was participating in.","FinalBlaze.png","FinalBlaze.html", 1)}
+    ${createProjectGridItem("Crimson","This was the forth game project I was participating in.","Crimson.png","Crimson.html", 2)}
+    ${createProjectGridItem("Final Blaze","This was the third game project I was participating in.","FinalBlaze.png","FinalBlaze.html", 3)}
+    ${createProjectGridItem("Crimson","This was the forth game project I was participating in.","Crimson.png","Crimson.html", 4)}
 </div>
 `;
 
-function createProjectGridItem(title, description, img, link){
+function createProjectGridItem(title, description, img, link, proj_nr){
     return `
-        <div>
-            <a href="${link}">
-                <div class="Grid-Item">
-                    <div class="Text-grid">
-                        <div>
-                            <h2>${title}</h2>
-                        </div>
-                        <div class="Paragraph">
-                            <p2>${description}</p2>
-                        </div>
-                    </div>
-                    <div class="Image-Div">
-                        <span class="Adjust-Image"></span>
-                        <img src="${img}">
-                    </div>
+        <div class="Grid-Item-Project-${proj_nr}">
+            <a href="${link}", class ="Project-Div-Link">
+                <div class="Text-Grid">
+                        <h2>${title}</h2>
+                        <p2 class="Paragraph">${description}</p2>
+                </div>
+                <div class="Project-Image-Div">
+                    
+                    <img src="${img}">
                 </div>
             </a>
         </div>
