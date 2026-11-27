@@ -55,14 +55,14 @@ body
     display: grid;
     padding-top: 12%;
     grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
     justify-content: center;
     width: 100%;
 
     position: absolute;
     z-index: 10;
 }
-/* 4 projects */
+
 .Grid-Item-Project-1
 {
     display: subgrid;
@@ -125,6 +125,21 @@ body
 
     grid-row: 3 / span 1;
     grid-column: 7 / span 3;
+}
+.Grid-Item-Project-5
+{
+    display: subgrid;
+    text-align: center;
+    grid-template-columns: repeat(2, 1fr);
+
+    border-radius: 10px;
+    border: 1px solid orange;
+
+    background-color:#1E293B;
+    color: rgb(122, 45, 71);
+
+    grid-row: 5 / span 1;
+    grid-column: 2 / span 3;
 }
 
 .Project-Div-Link

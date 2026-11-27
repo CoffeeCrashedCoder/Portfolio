@@ -8,8 +8,9 @@ if(projectContainer)
 <div class="Grid-Container">
     ${createProjectGridItem("Final Blaze","This was the third game project I was participating in.","FinalBlaze.png","FinalBlaze.html", 1)}
     ${createProjectGridItem("Crimson","This was the forth game project I was participating in.","Crimson.png","Crimson.html", 2)}
-    ${createProjectGridItem("Final Blaze","This was the third game project I was participating in.","FinalBlaze.png","FinalBlaze.html", 3)}
-    ${createProjectGridItem("Crimson","This was the forth game project I was participating in.","Crimson.png","Crimson.html", 4)}
+    ${createProjectGridItem("Specialization","This is my specialization project.","","", 3)}
+    ${createProjectGridItem("Factory Game","This is a product from the specialization project.","","", 4)}
+    ${createProjectGridItem("Turned Based Combat Package (TBC-Package)","This project thought me more about working in Unity.","","", 5)}
 </div>
 `;
 
