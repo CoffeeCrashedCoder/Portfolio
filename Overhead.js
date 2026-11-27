@@ -19,3 +19,15 @@ document.getElementById("js-overhead").innerHTML = `
         </div>
     </div>
 </div> `;
+
+//   FIXED GRID - BOX   -----------------------------------------------------------------------
+
+const el = document.getElementById("js-fixed-grid");
+const box = JSON.parse(el.dataset.config);
+
+el.innerHTML = `
+<div class="Fixed-Grid-Container">
+        <div class="Fixed-Grid-Item" style="--start_x: ${box.pos_x}; --start_y: ${box.pos_y}; --width: ${box.width}; --height: ${box.height};">
+            <a href="${box.link}"><h3 class="Title">${box.desc} </h3></a>
+        </div>
+</div> `;
